@@ -28,9 +28,13 @@ github_username:  arsad33
 
 # Build settings
 theme: minima
+minima:
+    skin: classic
 plugins:
   - jekyll-feed
-
+sass:
+    load_paths:
+        - _sass
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

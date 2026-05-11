@@ -1,0 +1,186 @@
+---
+---
+
+@import "minima";
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+$base-font-family: 'Source Sans 3', -apple-system, sans-serif;
+$base-font-size: 17px;
+$base-font-weight: 300;
+$base-line-height: 1.75;
+
+$heading-font-family: 'Playfair Display', Georgia, serif;
+
+// ============================================
+// COLOR PALETTE
+// ============================================
+$background-color: #f5f0e8;
+$text-color:       #1a1a1a;
+$brand-color:      #4a6fa5;
+$grey-color:       #828282;
+$grey-color-light: #e8e2d8;
+$grey-color-dark:  #333333;
+
+// ============================================
+// GLOBAL
+// ============================================
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// ============================================
+// HEADINGS
+// ============================================
+h1, h2, h3 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: $text-color;
+}
+
+h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
+h2 { font-size: 1.5rem; border-bottom: 1px solid $grey-color-light; padding-bottom: 0.3rem; }
+
+// ============================================
+// LINKS
+// ============================================
+a {
+  color: $brand-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-bottom-color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+// ============================================
+// HEADER / NAV
+// ============================================
+.site-header {
+  background-color: $background-color;
+  border-top: 3px solid $text-color;
+  border-bottom: 1px solid $grey-color-light;
+  padding: 1.2rem 0;
+}
+
+.site-title {
+  font-family: $heading-font-family;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: $text-color !important;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-color !important;
+    border-bottom: none;
+  }
+}
+
+.site-nav .page-link {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $grey-color-dark;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+.site-footer {
+  background-color: $background-color;
+  border-top: 1px solid $grey-color-light;
+  color: $grey-color;
+  font-size: 0.85rem;
+}
+
+// ============================================
+// BLOG POST LIST
+// ============================================
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    border-bottom: 1px solid $grey-color-light;
+    padding: 1.2rem 0;
+  }
+
+  h3 {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.post-meta {
+  font-size: 0.82rem;
+  color: $grey-color;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+// ============================================
+// POST CONTENT
+// ============================================
+.post-content {
+  p { margin-bottom: 1.4rem; }
+
+  code {
+    background-color: $grey-color-light;
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+    font-size: 0.88em;
+  }
+
+  pre {
+    background-color: #1a1a1a;
+    color: #f5f0e8;
+    padding: 1.2rem;
+    border-radius: 4px;
+    overflow-x: auto;
+
+    code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+  }
+}
+
+// ============================================
+// BUTTONS (for CV download etc)
+// ============================================
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1.5px solid $text-color;
+  color: $text-color;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-color;
+    color: $background-color;
+    border-bottom-color: transparent;
+  }
+}
