@@ -4,3 +4,5 @@
 
 layout: home
 ---
+<div class="intro-card">Cybersecurity specialist, cloud evangelist. I write about security, cloud, AI - and occassionally about everything else.
+</div>

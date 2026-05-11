@@ -1,8 +1,6 @@
 ---
 ---
 
-@import "minima";
-
 // ============================================
 // TYPOGRAPHY
 // ============================================
@@ -25,6 +23,8 @@ $grey-color:       #828282;
 $grey-color-light: #e8e2d8;
 $grey-color-dark:  #333333;
 
+@import "minima";
+
 // ============================================
 // GLOBAL
 // ============================================
@@ -36,6 +36,21 @@ body {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+// ============================================
+// INTRO CARD
+// ============================================
+.intro-card {
+  border: 1px solid $grey-color-light;
+  border-radius: 2px;
+  padding: 1.4rem 1.8rem;
+  margin: 2rem 0;
+  background-color: #faf7f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: $text-color;
 }
 
 // ============================================
@@ -71,7 +86,6 @@ a {
 // ============================================
 .site-header {
   background-color: $background-color;
-  border-top: 3px solid $text-color;
   border-bottom: 1px solid $grey-color-light;
   padding: 1.2rem 0;
 }
