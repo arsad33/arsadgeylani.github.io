@@ -2,20 +2,38 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
     <div class="footer-col-wrapper">
+
       <div class="footer-col footer-col-1">
-        {%- include social.html -%}
+        {%- if site.github_username -%}
+        <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+          <span class="username">{{ site.github_username | escape }}</span>
+        </a>
+        {%- endif -%}
       </div>
 
       <div class="footer-col footer-col-2">
+        {%- if site.linkedin_username -%}
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+          <span class="username">{{ site.linkedin_username | escape }}</span>
+        </a>
+        {%- endif -%}
       </div>
 
       <div class="footer-col footer-col-3">
-          <a class="u-email" href="mailto:{{ site.email }}">{{site.email}}</a>
-        </div>
-    </div>
+        {%- if site.email -%}
+        <a class="u-email" href="mailto:{{ site.email }}">
+          <svg class="svg-icon" viewBox="0 0 16 16">
+            <path d="M1.5 2h13A1.5 1.5 0 0 1 16 3.5v9A1.5 1.5 0 0 1 14.5 14h-13A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm0 1L8 8.5 14.5 3h-13zm0 10h13a.5.5 0 0 0 .5-.5V4.1L8.3 9.8a.5.5 0 0 1-.6 0L1 4.1v8.4a.5.5 0 0 0 .5.5z"/>
+          </svg>
+          <span class="username">email</span>
+        </a>
+        {%- endif -%}
+      </div>
 
+    </div>
   </div>
 
 </footer>
