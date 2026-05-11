@@ -4,10 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-# Mustafa Arsad Geylani
-Cybersecurity Specialist · Ankara, Turkey
-
-[Download PDF CV](#) | [LinkedIn](https://linkedin.com/in/arsadgeylani)
+<a href="/assets/files/Arsad_Geylani_CV.pdf" target="_blank" rel="noopener" class="btn">View CV</a> | <a href="https://linkedin.com/in/arsadgeylani" target="_blank" rel="noopener">LinkedIn</a>
 
 ## Experience
 WIP
